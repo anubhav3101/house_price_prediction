@@ -1,10 +1,16 @@
 House Price Prediction Web Application
+
+
 Welcome to the House Price Prediction web application project. This application is designed to predict house prices based on input features such as the number of bedrooms, bathrooms, and square footage. The application uses a machine learning model to make these predictions and is built using Flask, a lightweight web framework for Python.
 
 Project Structure
+
+
 The project is organized to ensure clarity and ease of navigation. The root directory contains the main application files (app.py and model.py), along with directories for HTML templates, CSS files, and the dataset. Specifically, app.py is the main Flask application file that handles the web server and routes, while model.py is responsible for training and saving the machine learning model. The templates directory houses the HTML templates, the static directory contains the CSS files, and the data directory includes the dataset file used for model training.
 
 Setup Instructions
+
+
 To set up and run the project, follow these steps:
 
 Clone the Repository: Begin by cloning the repository to your local machine using the command git clone <your-repo-url>. Navigate to the project directory with cd house_price_prediction.
