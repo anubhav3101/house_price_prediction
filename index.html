@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>House Price Prediction</h1>
+        <form action="/predict" method="post" class="prediction-form">
+            <label for="bedrooms">Bedrooms:</label>
+            <input type="number" name="bedrooms" placeholder="Enter number of bedrooms" required><br>
+            <label for="bathrooms">Bathrooms:</label>
+            <input type="number" name="bathrooms" placeholder="Enter number of bathrooms" required><br>
+            <label for="sqft_living">Square Feet:</label>
+            <input type="number" name="sqft_living" placeholder="Enter square footage" required><br>
+            <input type="submit" value="Predict">
+        </form>
+        {% if prediction_text %}
+            <h2>{{ prediction_text }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
