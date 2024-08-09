@@ -15,9 +15,16 @@ To set up and run the project, follow these steps:
 
 Clone the Repository: Begin by cloning the repository to your local machine using the command git clone <your-repo-url>. Navigate to the project directory with cd house_price_prediction.
 Install Dependencies: Install the necessary libraries by running the command pip install Flask pandas scikit-learn. This will install Flask for the web application and pandas and scikit-learn for data manipulation and machine learning, respectively.
+
+
 Train the Model: Execute the model training script by running python model.py. This script will load the dataset, preprocess it, train a Linear Regression model, and save the model as model.pkl in the root directory.
+
+
 Run the Flask Application: Start the Flask application by running python app.py. Once the server is running, open your web browser and navigate to http://127.0.0.1:5000/ to access the application.
+
+
 Usage
+
 The web application provides a user-friendly form where users can input house features, including the number of bedrooms, bathrooms, and total square footage. After entering the details, users can click the "Predict" button to get an estimated house price based on the input features. The predicted price is then displayed on the web page.
 
 Screenshots
